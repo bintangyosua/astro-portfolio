@@ -7,7 +7,7 @@ published_date: 07-04-2024
 
 <!-- # Review Annabelle: Comes Home (2019) -->
 
-![Annabelle Comes Home](./images/annabelle-comes-home.webp)
+![Annabelle Comes Home](./images/annabelle-comes-home-three-ladies.webp)
 
 ## Introduction
 
