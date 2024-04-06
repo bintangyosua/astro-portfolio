@@ -3,20 +3,21 @@ import { useEffect, useState } from "react";
 import type { CollectionEntry } from "astro:content";
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { FaGlobe } from "react-icons/fa";
+import BreadcrumbLayout from "../layouts/BreadcrumbLayout";
+import { Image } from "astro:assets";
 
 export default function Projects() {
   const [blog, setBlog] = useState<CollectionEntry<"blog">[]>();
   const [query, setQuery] = useState<string>("");
   useEffect(() => {
-    console.log("masuk sini");
     const blog = getCollection("blog").then((value) => {
       setBlog(value);
-      console.log({ value });
     });
   }, []);
   return (
     <div className="w-full">
       <h1 className="mb-3 text-2xl">Blog</h1>
+      <BreadcrumbLayout link="/blog" />
       <div className="grid items-center justify-center gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {blog?.map((value, key) => (
           <div

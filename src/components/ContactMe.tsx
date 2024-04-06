@@ -13,7 +13,6 @@ export default function ContactMe() {
 
   useEffect(() => {
     isEmail(email) ? setValidEmail(true) : setValidEmail(false);
-    console.log(isEmail(email));
   }, [email]);
 
   return (

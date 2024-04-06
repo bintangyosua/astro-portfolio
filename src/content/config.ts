@@ -17,6 +17,7 @@ const blogCollection = defineCollection({
     title: z.string(),
     thumbnail: z.string(),
     desc: z.string(),
+    published_date: z.string(),
     // director: z.string(),
     // release_date: z.number(),
     // genres: z.array(z.string()),

@@ -3,20 +3,22 @@ import { useEffect, useState } from "react";
 import type { CollectionEntry } from "astro:content";
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { FaGlobe } from "react-icons/fa";
+import { Breadcrumb } from "flowbite-react";
+import { HiHome } from "react-icons/hi";
+import BreadcrumbLayout from "../layouts/BreadcrumbLayout";
 
 export default function Projects() {
   const [projects, setProjects] = useState<CollectionEntry<"project">[]>();
   const [query, setQuery] = useState<string>("");
   useEffect(() => {
-    console.log("masuk sini");
     const blog = getCollection("project").then((value) => {
       setProjects(value);
-      console.log({ value });
     });
   }, []);
   return (
     <div className="w-full">
       <h1 className="mb-3 text-2xl">Projects</h1>
+      <BreadcrumbLayout link="/projects" />
       <div className="grid items-center justify-center gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {projects?.map((value, key) => (
           <div
@@ -57,7 +59,7 @@ export default function Projects() {
                   )}
                 </div>
                 <a
-                  href={`/projects/${"slug"}`}
+                  href={`/projects/${value.slug}`}
                   className="block text-right text-blue-800">
                   {"Read More ->"}
                 </a>

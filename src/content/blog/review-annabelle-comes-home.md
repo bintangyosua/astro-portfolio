@@ -2,9 +2,10 @@
 title: "Annabelle: Comes Home (2019)"
 thumbnail: /blog/annabelle-comes-home.webp
 desc: While attending Nevermore Academy, Wednesday Addams attempts to master her emerging psychic ability, thwart a killing spree and solve the mystery that embroiled her parents 25 years ago.
+published_date: 07-04-2024
 ---
 
-# Review Annabelle: Comes Home (2019)
+<!-- # Review Annabelle: Comes Home (2019) -->
 
 ![Annabelle Comes Home](./images/annabelle-comes-home.webp)
 
