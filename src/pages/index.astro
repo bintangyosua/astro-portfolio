@@ -1,0 +1,30 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Section from "../layouts/Section.astro"
+import { getCollection } from 'astro:content';
+import ProjectCard from "../components/ProjectCard.astro"
+import BlogCard from "../components/BlogCard.astro"
+
+const allProjects = await getCollection("project")
+const blog = await getCollection("blog") 
+
+---
+
+<Layout title="Minuettaro">
+	<main class="flex flex-col gap-5 pb-24">
+			<Section title="Projects" link='/projects'>
+				<div class="justify-center items-center gap-5 grid sm:grid-cols-2 lg:grid-cols-3">
+					{allProjects.slice(0, 3).map((project) => (
+						<ProjectCard title={project.data.title} github={project.data.github} website={project.data.website || ""} desc={project.data.desc} thumbnail={project.data.thumbnail} slug={project.slug}  />
+					))}
+				</div>
+			</Section>
+			<Section title='Reviews' link="/blog">
+				<div class="justify-center items-center gap-5 grid sm:grid-cols-2 lg:grid-cols-3">
+					{blog.slice(0, 3).map((item) => {
+						return <BlogCard title={item.data.title}  thumbnail={item.data.thumbnail} desc={item.data.desc} slug={item.slug}/>
+					})}
+				</div>
+			</Section>
+	</main>
+</Layout>

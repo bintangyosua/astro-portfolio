@@ -1,0 +1,46 @@
+---
+import MainLayout from "../../layouts/Layout.astro"
+import { getCollection } from "astro:content"
+
+export async function getStaticPaths() {
+  const blog =  await getCollection("blog")
+
+  return blog.map(entry => ({
+    params: { slug: entry.slug }, props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+---
+
+<MainLayout title={entry.data.title}>
+  <div id="content" class="w-full md:w-full lg:w-3/4 mx-auto">
+    <Content />
+  </div>
+  <style is:global>
+    h1 {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    img {
+      margin: auto auto;
+      width: 100%;
+    }
+
+    p {
+      text-align: justify;
+    }
+
+    #content > * + * {
+      margin-top: 1rem;
+    }
+  </style>
+</MainLayout>
+
