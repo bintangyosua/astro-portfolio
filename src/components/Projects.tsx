@@ -16,13 +16,14 @@ export default function Projects() {
   }, []);
   return (
     <div className="w-full">
-      <div className="justify-center items-center gap-5 grid sm:grid-cols-2 lg:grid-cols-3">
+      <h1 className="mb-3 text-2xl">Projects</h1>
+      <div className="grid items-center justify-center gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {projects?.map((value, key) => (
           <div
             className="sm:max-w-[300px] sm:h-[310px] md:h-[330px] border rounded-lg shadow-sm flex flex-col"
             key={key}>
             <img src={value.data.thumbnail} alt={value.data.title} />
-            <div className="px-2 py-4 h-full flex flex-col justify-between">
+            <div className="flex flex-col justify-between h-full px-2 py-4">
               <div className="">
                 <h3 className="text-xl">
                   <a href={"/projects/" + value.slug}>{value.data.title}</a>
@@ -33,8 +34,8 @@ export default function Projects() {
                     : value.data.desc}
                 </p>
               </div>
-              <div className="flex justify-between items-center">
-                <div className="flex gap-3 items-center">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-3">
                   {value.data.github ? (
                     <a
                       href={value.data.github}

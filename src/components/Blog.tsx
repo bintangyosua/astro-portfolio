@@ -16,7 +16,8 @@ export default function Projects() {
   }, []);
   return (
     <div className="w-full">
-      <div className="justify-center items-center gap-5 grid sm:grid-cols-2 lg:grid-cols-3">
+      <h1 className="mb-3 text-2xl">Blog</h1>
+      <div className="grid items-center justify-center gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {blog?.map((value, key) => (
           <div
             className="sm:max-w-[300px] sm:h-[330px] md:h-[350px] border rounded-lg shadow-sm flex flex-col"
@@ -25,7 +26,7 @@ export default function Projects() {
               <a href={"/blog/" + value.slug}>
                 <img src={value.data.thumbnail} alt={value.data.title} />
               </a>
-              <div className="px-2 py-4 h-full flex flex-col justify-between">
+              <div className="flex flex-col justify-between h-full px-2 py-4">
                 <div>
                   <a href={"/blog/" + value.slug}>
                     <h3 className="text-xl">{value.data.title}</h3>
@@ -38,7 +39,7 @@ export default function Projects() {
                 </div>
                 <a
                   href={"/blog/" + value.slug}
-                  className="text-right block text-blue-800">
+                  className="block text-right text-blue-800">
                   {"Read More ->"}
                 </a>
               </div>
