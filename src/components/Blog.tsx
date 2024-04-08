@@ -10,7 +10,10 @@ export default function Projects() {
   const [blog, setBlog] = useState<CollectionEntry<"blog">[]>();
   const [query, setQuery] = useState<string>("");
   useEffect(() => {
-    const blog = getCollection("blog").then((value) => {
+    getCollection("blog").then((value) => {
+      value.sort((a, b) =>
+        b.data.published_date.localeCompare(a.data.published_date)
+      );
       setBlog(value);
     });
   }, []);

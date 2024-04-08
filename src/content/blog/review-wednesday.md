@@ -2,7 +2,7 @@
 title: Review Wednesday (2022)
 thumbnail: /blog/wednesday.jpg
 desc: While attending Nevermore Academy, Wednesday Addams attempts to master her emerging psychic ability, thwart a killing spree and solve the mystery that embroiled her parents 25 years ago.
-published_date: 07-04-2024
+published_date: 01-04-2024
 ---
 
 <!-- # Review Wednesday - Netflix Series -->
