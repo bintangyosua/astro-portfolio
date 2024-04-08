@@ -5,6 +5,7 @@ import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { FaGlobe } from "react-icons/fa";
 import BreadcrumbLayout from "../layouts/BreadcrumbLayout";
 import { Image } from "astro:assets";
+import DateIcon from "./icons/date";
 
 export default function Projects() {
   const [blog, setBlog] = useState<CollectionEntry<"blog">[]>();
@@ -31,7 +32,7 @@ export default function Projects() {
                 <img
                   src={value.data.thumbnail}
                   alt={value.data.title}
-                  className="sm:object-cover h-[164px] w-full"
+                  className="sm:object-cover sm:h-[164px] sm:w-full"
                 />
               </a>
               <div className="flex flex-col justify-between h-full px-2 py-4">
@@ -39,9 +40,12 @@ export default function Projects() {
                   <a href={"/blog/" + value.slug}>
                     <h3 className="text-xl">{value.data.title}</h3>
                   </a>
+                  <div className="flex gap-1 items-center">
+                    <DateIcon /> <span>{value.data.published_date}</span>
+                  </div>
                   <p>
-                    {value.data.desc.length > 65
-                      ? `${value.data.desc.slice(0, 65)} ....`
+                    {value.data.desc.length > 60
+                      ? `${value.data.desc.slice(0, 60)} ....`
                       : value.data.desc}
                   </p>
                 </div>

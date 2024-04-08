@@ -27,7 +27,7 @@ export default function Projects() {
             <img
               src={value.data.thumbnail}
               alt={value.data.title}
-              className="sm:object-cover h-[164px] w-full"
+              className="sm:object-cover sm:h-[164px] sm:w-full"
             />
             <div className="flex flex-col justify-between h-full px-2 py-4">
               <div className="">

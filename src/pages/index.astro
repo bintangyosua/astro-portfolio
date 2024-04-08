@@ -21,8 +21,8 @@ const blog = await getCollection("blog")
 			</Section>
 			<Section title='Reviews' link="/blog">
 				<div class="justify-center items-center gap-5 grid sm:grid-cols-2 lg:grid-cols-3">
-					{blog.slice(0, 3).map((item) => {
-						return <BlogCard title={item.data.title}  thumbnail={item.data.thumbnail} desc={item.data.desc} slug={item.slug}/>
+					{blog.sort((a, b) => b.data.published_date.localeCompare(a.data.published_date)).slice(0, 3).map((item) => {
+						return <BlogCard published_date={item.data.published_date} title={item.data.title}  thumbnail={item.data.thumbnail} desc={item.data.desc} slug={item.slug}/>
 					})}
 				</div>
 			</Section>

@@ -2,26 +2,31 @@
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { FaGlobe } from "react-icons/fa";
 import { Image } from "astro:assets";
+import DateIcon from "./icons/date";
 
 interface Props {
   title: string;
   desc: string
   thumbnail: string;
   slug: string
+  published_date: string
 }
 
-const {desc, thumbnail, title, slug} = Astro.props
+const {desc, thumbnail, title, slug, published_date} = Astro.props
 ---
 
 <div class="sm:max-w-[300px] sm:h-[330px] md:h-[350px] border rounded-lg shadow-sm flex flex-col">
   <div class="flex flex-col h-full">
-    <a href={"/blog/" + slug}><img src={thumbnail} class="sm:object-cover h-[164px] w-full" alt={title} /></a>
+    <a href={"/blog/" + slug}><img src={thumbnail} class="sm:object-cover sm:h-[164px] sm:w-full" alt={title} /></a>
     <div class="px-2 py-4 h-full flex flex-col justify-between">
       <div>
       <a href={"/blog/" + slug}><h3 class="text-xl">{title}</h3></a>
+<div class="flex gap-1 items-center">
+                    <DateIcon /> <span>{published_date}</span>
+                  </div>
         <p>
-          {desc.length > 65
-              ? `${desc.slice(0, 65)} ....`
+          {desc.length > 60
+              ? `${desc.slice(0, 60)} ....`
               : desc}
         </p>
       </div>
