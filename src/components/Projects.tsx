@@ -24,7 +24,11 @@ export default function Projects() {
           <div
             className="sm:max-w-[300px] sm:h-[310px] md:h-[330px] border rounded-lg shadow-sm flex flex-col"
             key={key}>
-            <img src={value.data.thumbnail} alt={value.data.title} />
+            <img
+              src={value.data.thumbnail}
+              alt={value.data.title}
+              className="sm:object-cover h-[164px] w-full"
+            />
             <div className="flex flex-col justify-between h-full px-2 py-4">
               <div className="">
                 <h3 className="text-xl">

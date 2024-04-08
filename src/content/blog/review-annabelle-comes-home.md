@@ -1,19 +1,19 @@
 ---
 title: "Annabelle: Comes Home (2019)"
 thumbnail: /blog/annabelle-comes-home.webp
-desc: While attending Nevermore Academy, Wednesday Addams attempts to master her emerging psychic ability, thwart a killing spree and solve the mystery that embroiled her parents 25 years ago.
+desc: "Have you ever encounter a doll that can switch place by themselves? Its Annabelle: Comes Home, released on June 26, 2019. Its a horror suspense movie. This movie is about such three ladies (i think they’re junior high school) live in such a scary house and they need to fix a problem made by one of them. i thought it was gonna be some classical conjuring movies where ed and lorraine gonna be the main characters, but it is not."
 published_date: 07-04-2024
 ---
 
 <!-- # Review Annabelle: Comes Home (2019) -->
-
-![Annabelle Comes Home](./images/annabelle-comes-home-three-ladies.webp)
 
 ## Introduction
 
 Have you ever encounter a doll that can switch place by themselves? Its Annabelle: Comes Home, released on June 26, 2019. Its a horror suspense movie. This movie is about such three ladies (i think they're junior high school) live in such a scary house and they need to fix a problem made by one of them. i thought it was gonna be some classical conjuring movies where ed and lorraine gonna be the main characters, but it is not.
 
 ## Plot Summary
+
+![Annabelle Comes Home](./images/annabelle-comes-home-three-ladies.webp)
 
 <!-- [Lorraine Exorcist Annabelle Doll](./images/annabelle-comes-home-lorraine-exorcist-annabelle.avif) -->
 

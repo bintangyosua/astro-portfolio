@@ -15,7 +15,7 @@ const {desc, thumbnail, title, slug} = Astro.props
 
 <div class="sm:max-w-[300px] sm:h-[330px] md:h-[350px] border rounded-lg shadow-sm flex flex-col">
   <div class="flex flex-col h-full">
-    <a href={"/blog/" + slug}><img src={thumbnail} alt={title} /></a>
+    <a href={"/blog/" + slug}><img src={thumbnail} class="sm:object-cover h-[164px] w-full" alt={title} /></a>
     <div class="px-2 py-4 h-full flex flex-col justify-between">
       <div>
       <a href={"/blog/" + slug}><h3 class="text-xl">{title}</h3></a>

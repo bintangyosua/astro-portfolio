@@ -7,13 +7,13 @@ published_date: 07-04-2024
 
 <!-- # Review Wednesday - Netflix Series -->
 
-![](./images/wednesday-cover.png)
-
 ## Sinopsis
 
 Sebuah misteri supernatural yang menggambarkan tahun-tahun Wednesday Addams sebagai siswa di Nevermore Academy. Upaya Wednesday untuk mengendalikan kemampuan psikisnya yang muncul, menggagalkan pembunuhan besar-besaran yang telah meneror kota setempat, dan memecahkan misteri supernatural yang melibatkan orang tuanya 25 tahun lalu - semuanya sambil menavigasi hubungan barunya yang sangat kusut di Nevermore.
 
 ## Wednesday Karakter yang Mandiri dan Dapat Berpikir dengan Sangat Rasional (Diawal Cerita)
+
+![](./images/wednesday-cover.png)
 
 Wednesday merupakan karakter yang sangat mandiri. Dia percaya dapat hidup sendiri tanpa orang lain.  Wednesday bukanlah wanita yang suka basa-basi. Tidak peduli apa kata orang _(seperti buku Berani Tidak Disukai)_ dia selalu maju kedepan\_.
 
