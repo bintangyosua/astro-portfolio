@@ -8,6 +8,10 @@ export default {
       },
       colors: {
         "blue-primary": "#EDEEF0",
+        "gray-darkest": "#B4B4B8",
+        "gray-darker": "#C7C8CC",
+        "cream-lighter": "#C7C8CC",
+        "cream-lightest": "#F2EFE5",
       },
     },
   },

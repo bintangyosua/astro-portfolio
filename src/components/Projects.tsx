@@ -42,24 +42,19 @@ export default function Projects() {
               </div>
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  {value.data.github ? (
+                  {value.data.github && (
                     <a
                       href={value.data.github}
                       className="flex items-center gap-1">
                       <GitHubLogoIcon /> Github
                     </a>
-                  ) : (
-                    <></>
                   )}
-                  <a href={"website"} className="flex items-center gap-1"></a>
-                  {value.data.website ? (
+                  {value.data.website && (
                     <a
                       href={value.data.website}
                       className="flex items-center gap-1">
                       <FaGlobe /> Website
                     </a>
-                  ) : (
-                    <></>
                   )}
                 </div>
                 <a

@@ -2,7 +2,7 @@
   import "@fontsource/klee-one/";
 </script>
 
-<nav class="sticky top-0 z-10 bg-white">
+<nav class="sticky top-0 z-10 border-b-[1px] border-b-gray-400 bg-gray-100">
   <div class="container py-4">
     <div
       class="flex flex-col items-center justify-between gap-3 px-4 md:flex-row md:px-8 lg:px-32 xl:px-64"
