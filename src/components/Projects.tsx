@@ -27,13 +27,11 @@ export default function Projects() {
             <img
               src={value.data.thumbnail}
               alt={value.data.title}
-              className="sm:object-cover sm:h-[164px] sm:w-full"
+              className="sm:object-cover sm:h-[164px] sm:w-full border-b-gray-200 border-b-[1px]"
             />
             <div className="flex flex-col justify-between h-full px-2 py-4">
               <div className="">
-                <h3 className="text-xl">
-                  <a href={"/projects/" + value.slug}>{value.data.title}</a>
-                </h3>
+                <h3 className="text-xl">{value.data.title}</h3>
                 <p>
                   {value.data.desc.length > 75
                     ? `${value.data.desc.slice(0, 75)} ....`
@@ -57,11 +55,6 @@ export default function Projects() {
                     </a>
                   )}
                 </div>
-                <a
-                  href={`/projects/${value.slug}`}
-                  className="block text-right text-blue-800">
-                  {"Read More ->"}
-                </a>
               </div>
             </div>
           </div>

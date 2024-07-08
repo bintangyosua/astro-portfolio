@@ -14,7 +14,7 @@ const blog = await getCollection("blog")
 	<main class="flex flex-col gap-5 pb-24">
 			<Section title="Projects" link='/projects'>
 				<div class="justify-center items-center gap-5 grid sm:grid-cols-2 lg:grid-cols-3">
-					{allProjects.slice(0, 3).map((project) => (
+					{allProjects.filter((project) => project.data.top === true).slice(0, 3).map((project) => (
 						<ProjectCard title={project.data.title} github={project.data.github} website={project.data.website || ""} desc={project.data.desc} thumbnail={project.data.thumbnail} slug={project.slug}  />
 					))}
 				</div>
